@@ -1,31 +1,24 @@
+
 #include <iostream>
-#include <map>
-#include <algorithm>
 using namespace std;
+typedef long long ll;
+ll gccd(ll a, ll b)
+{
+	return a % b == 0 ? b : gccd(b, a%b);
+}
 int maiin()
 {
-	int h, a, b, t;
-	//while (~scanf("%d %d %d %d", &h, &a, &b, &t)) {
-	while (cin >> h >> a >> b >> t) {
-		int sum = 0, k = 0;
-		if (a == b) {
-			printf(a >= h ? "yes\n" : "no\n");
+	int n;
+	while (scanf("%d", &n) == 1 && n) {
+		ll ans, x;
+		scanf("%lld", &ans);
+		--n;
+		while (n--) {
+			scanf("%lld", &x);
+			ans = ans * x / (gccd(ans, x));
 		}
-		else {
-			while (k<h) {
-				k += a;
-				sum++;
-				if (k >= h) {
-					break;
-				}
-				k -= b;
-				sum++;
-			}
-			printf(sum <= t ? "yes\n" : "no\n");
-		}
+		if (ans >= 1000000) puts("Too much money to pay!");
+		else printf("The CEO must bring %lld pounds.\n", ans);
 	}
 	return 0;
 }
-
-
-

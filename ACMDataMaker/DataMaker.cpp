@@ -1,6 +1,6 @@
 #include "DataMaker.h"
 
-#include "AcCode.h"
+#include "ACCode.h"
 #include "DataMaker.h"
 #include "In.h"
 #include <windows.h>
@@ -8,7 +8,7 @@
 using namespace std;
 int main() {
 	int test_case = 10;
-	string problemDir = "c:/code/reach-top/data/problem/1930/";
+	string problemDir = "c:/code/reach-top/data/problem/1960/";
 	//如果目录不存在，则创建目录。
 	CreateDirectory(problemDir.data(), NULL);
 

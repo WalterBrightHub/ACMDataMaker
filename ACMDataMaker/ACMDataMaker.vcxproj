@@ -120,12 +120,16 @@
     <ClInclude Include="ACCode.h" />
     <ClInclude Include="DataMaker.h" />
     <ClInclude Include="In.h" />
+    <ClInclude Include="NumberTheory.h" />
+    <ClInclude Include="Print.h" />
     <ClInclude Include="Random.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ACCode.cpp" />
     <ClCompile Include="DataMaker.cpp" />
     <ClCompile Include="In.cpp" />
+    <ClCompile Include="NumberTheory.cpp" />
+    <ClCompile Include="Print.cpp" />
     <ClCompile Include="Random.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

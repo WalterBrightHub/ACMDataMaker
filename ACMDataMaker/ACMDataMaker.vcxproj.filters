@@ -27,6 +27,12 @@
     <ClInclude Include="Random.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Print.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="NumberTheory.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DataMaker.cpp">
@@ -39,6 +45,12 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="Random.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Print.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="NumberTheory.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

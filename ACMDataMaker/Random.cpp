@@ -92,7 +92,6 @@ void print(map<int, int> M) {
 //n个点,标记为1~n的点集中不同的count条路径
 set<pair<int, int>> getRandomIntRoute(int n, unsigned int count) {
 	set<pair<int, int>> S;
-	int x, y;
 	while (S.size()<count) {
 		S.insert(twinRandom(1, n));
 	}

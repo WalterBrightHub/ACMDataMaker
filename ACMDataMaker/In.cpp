@@ -4,22 +4,29 @@ typedef long long LL;
 typedef unsigned long long ULL;
 
 void makeIn() {
-	int T, n, m, a, b, c, d, k, s, t, tim, u, v, l, r, h, p, x, y, q;
+	int T, n, m, a, b, c, d, k, s, t, tim, u, v, l, r, h, p, x, y, q,g;
 	double xx, yy, zz, rr;
-	pair<int, int>ab, uv;
+	//make vs happy
+	T, n, m, a, b, c, d, k, s, t, tim, u, v, l, r, h, p, x, y, q, xx, yy, zz, rr;
+	pair<int, int>ab, uv, ac;
 	srand((ULL)new char);
 	T = getRandom(5000, 10000);
-	//T=100;
+	T=10;
 	//printf("%d\n",T);
+	//print({ T });
+	
 	for (int ccc = 0; ccc < T; ccc++) {
-		h = getRandom(1, 100000);
-		a = getRandom(1, 1000);
-		b = getRandom(1, a);
-		t = getRandom(1, 1000);
-		printf("%d %d %d %d\n", h, a, b, t);
+		
+		n = getRandom(1, 20);
+		printf("%d", n);
+		while (n--) {
+			printf(" %d", getRandom(1, 30));
+		}
+		printf("\n");
 	}
 
-	//printf("0\n");
+	printf("0\n");
+	//print({ 0,0,0 });
 
 
 		//Ê¾Àý´úÂë
