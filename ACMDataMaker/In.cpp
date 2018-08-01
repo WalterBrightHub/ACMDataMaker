@@ -3,30 +3,44 @@
 typedef long long LL;
 typedef unsigned long long ULL;
 
-void makeIn() {
+void makeIn(int ccc) {
 	int T, n, m, a, b, c, d, k, s, t, tim, u, v, l, r, h, p, x, y, q,g;
 	double xx, yy, zz, rr;
 	//make vs happy
 	T, n, m, a, b, c, d, k, s, t, tim, u, v, l, r, h, p, x, y, q, xx, yy, zz, rr;
 	pair<int, int>ab, uv, ac;
 	srand((ULL)new char);
-	T = getRandom(5000, 10000);
+	//T = getRandom(5000, 10000);
 	T=10;
 	//printf("%d\n",T);
 	//print({ T });
 	
-	for (int ccc = 0; ccc < T; ccc++) {
-		
-		n = getRandom(1, 20);
-		printf("%d", n);
-		while (n--) {
-			printf(" %d", getRandom(1, 30));
+	for (int cc = 0; cc < T; cc++) {
+		n = getRandom(1, 1000);
+		print({ n });
+		stack<int> S;
+		for (int i = 0; i < n; i++) {
+			if (S.empty()) {
+				cout << "push " << getRandomString(5) << endl;
+				S.push(1);
+			}
+			else {
+				if (isLucky(45)) {
+					cout << "push " << getRandomString(5) << endl;
+					S.push(1);
+				}
+				else {
+					cout << "pop" << endl;
+					S.pop();
+				}
+			}
 		}
-		printf("\n");
+		
 	}
 
-	printf("0\n");
+	//printf("\n");
 	//print({ 0,0,0 });
+	
 
 
 		//Ê¾Àý´úÂë

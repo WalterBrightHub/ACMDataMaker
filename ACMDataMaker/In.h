@@ -1,7 +1,9 @@
 #pragma once
+#include <stack>
+#include <string>
 #include "Random.h"
 #include "Print.h"
 
 
 #include "NumberTheory.h"
-void makeIn();
+void makeIn(int ccc);

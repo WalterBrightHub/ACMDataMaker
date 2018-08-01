@@ -1,5 +1,6 @@
 #include "Print.h"
 #include <cstdio>
+#include <set>
 using namespace std;
 
 void print(initializer_list<int> ints) {
@@ -9,4 +10,14 @@ void print(initializer_list<int> ints) {
 		printf("%d", *ptr);
 	}
 	printf("\n");
+}
+
+
+void printPer(set<int> S) {
+	set<int>::iterator it = S.end();
+	it--;
+	for (; it != S.begin(); it--) {
+		printf("%d\n", *it);
+	}
+	printf("%d\n", *it);
 }

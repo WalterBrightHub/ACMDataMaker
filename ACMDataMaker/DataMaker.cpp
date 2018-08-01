@@ -8,7 +8,7 @@
 using namespace std;
 int main() {
 	int test_case = 10;
-	string problemDir = "c:/code/reach-top/data/problem/1960/";
+	string problemDir = "c:/code/reach-top/data/problem/1972/";
 	//如果目录不存在，则创建目录。
 	CreateDirectory(problemDir.data(), NULL);
 
@@ -19,7 +19,7 @@ int main() {
 			const char* path_in = name_in.data();
 			freopen(path_in, "w", stdout);
 
-			makeIn(); 
+			makeIn(i); 
 			//fclose(stdin);
 		}
 		//利用ac代码造答案 
