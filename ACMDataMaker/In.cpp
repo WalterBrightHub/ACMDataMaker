@@ -11,31 +11,37 @@ void makeIn(int ccc) {
 	pair<int, int>ab, uv, ac;
 	srand((ULL)new char);
 	//T = getRandom(5000, 10000);
-	T=10;
+	T=1;
 	//printf("%d\n",T);
 	//print({ T });
 	
 	for (int cc = 0; cc < T; cc++) {
-		n = getRandom(1, 1000);
-		print({ n });
-		stack<int> S;
-		for (int i = 0; i < n; i++) {
-			if (S.empty()) {
-				cout << "push " << getRandomString(5) << endl;
-				S.push(1);
-			}
-			else {
-				if (isLucky(45)) {
-					cout << "push " << getRandomString(5) << endl;
-					S.push(1);
-				}
-				else {
-					cout << "pop" << endl;
-					S.pop();
-				}
+		if (ccc == 1) {
+			printf("1 1 1 1 1 1");
+		}
+		else if (ccc == 2) {
+			printf("0 0 0 0 0 0");
+		}
+		else if (ccc == 3) {
+			printf("0 0 1 0 0 0");
+		}
+		else if (ccc == 4) {
+			printf("0 0 0 0 0 1");
+		}
+		else if(ccc<=7){
+			for (int i = 0; i < 6; i++) {
+				if (i)printf(" ");
+				printf("%d", getRandom(100, 1000000));
 			}
 		}
-		
+		else {
+			printf("%d", getRandom(100000, 1000000));
+			for (int i = 1; i < 5; i++) {
+				printf(" %d", getRandom(10, 100));
+			}
+			printf(" %d", getRandom(100000, 1000000));
+		}
+
 	}
 
 	//printf("\n");
@@ -43,120 +49,6 @@ void makeIn(int ccc) {
 	
 
 
-		//Ê¾Àý´úÂë
-		//m=getRandom(n,n*(n-1)/8);
-		/*vector<string>V=getRandomStrings(50);
-		vector<string>VV;
-		for(int i=1;i<=41;i++){
-		for(int j=1;j<=i;j++){
-		VV.push_back(V[i]);
-		}
-		}
-		random_shuffle(VV.begin(),VV.end());
-		cout<<VV.size()<<endl;
-		for(int i=0;i<VV.size();i++){
-		cout<<VV[i]<<endl;
-		}*/
-		//set<pair<int,int>>P=getRandomIntPoint(-10000,10000,-10000,10000,n);
-		//print(P);
-
-
-		//m=getRandom(n,n*(n-1)/2);
-		//printf("%d\n",m); 
-		//set<pair<int,int>>R=getRandomIntRoute(n,m);
-		//print(R);
-
-		//ab=twinRandom(1,n);
-		//printf("%d %d\n",ab.first,ab.second);
-		//k=getRandom(1,999);
-		//n=getRandom(1,100);
-		//m=getRandom(1,99);
-		//printf("%d %d\n",n,m);
-		/*for(int i=0;i<n;i++){
-		for(int j=0;j<n;j++){
-		k=getRandom(1,1000);
-		printf("%d ",k);
-		}
-		printf("\n");
-		}*/
-		//q=getRandom(0,n*2);
-		//printf("%d\n",q);
-		//printf("%d %d\n",n,m);
-		//a=getRandom(1,200);
-		//b=getRandom(1,200);
-
-		//n=800;
-		//l=getRandom(5000,10000);
-		//m=getRandom(1,100);
-		//printf("%d %d\n",l,m);
-		//for(int i=1;i<=m;i++){
-		//    ab=twinRandom(0,l);
-		//    printf("%d %d\n",ab.first,ab.second);
-		//}
-		//t=getRandom(70,100);
-		//r=getRandom(p,70);
-		//printf("%d %d\n",p,p*(p-1)/2+r);
-		//t=n*(n-1)/2;
-		//s=getRandom(1,3);
-		//d=getRandom(10,12);
-
-		//printf("%d %d %d\n",t,s,d);
-		//p=getRandom(1,50);
-		/*for(int hu=0;hu<1;hu++)
-		for(int i=1;i<=n-1;i++){
-		for(int j=i+1;j<=n;j++){
-		m=getRandom(10,100);
-		printf("%d %d %d\n",i,j,m);
-		}
-		}*/
-		/*
-		set<int> S=diffRandom(1,10,s);
-		set<int>::iterator it=S.begin();
-		for(;it!=S.end();it++){
-		printf("%d ",*it);
-		}
-		printf("\n");
-		*/
-		/*
-		S=diffRandom(11,n,d) ;
-		it=S.begin();
-		for(;it!=S.end();it++){
-		printf("%d ",*it);
-		}
-		*/
-		//c=getRandom(1,50);
-		//printf("%d %d\n",r,c);
-		//vector<string> music=getRandomString(10);
-		//vector<string> sport=getRandomString(10);
-		//for(int i=0;i<n;i++){
-		//a=getRandom(1,n);
-		//b=getRandom(1,n);
-		//c=getRandom(1,1000);
-		//ab=twinRandom(1,m);
-		//v=getRandom(1,100);
-		//printf("%d %d\n",a,b);
-		//l=getRandom(1,100);
-		//r=getRandom(0,m-1);
-		//tim=getRandom(1,12);
-
-		//printf("%d %d %d\n",i,l,r);
-		//printf("%d %d %d\n",ab.first,ab.second,v);
-		//k=getRandom(1,4);
-		//printf("%d ",k);
-		//printf("\n");
-		//cout<<music[getRandom(0,9)]<<" "<<sport[getRandom(0,9)];
-		//printf("\n");
-
-		//xx=getRandom(1000,100000)/1000.0;
-		//yy=getRandom(1000,100000)/1000.0;
-		//zz=getRandom(1000,100000)/1000.0;
-		//rr=getRandom(1000,30000)/1000.0;
-		//printf("%.3f %.3f %.3f %.3f\n",xx,yy,zz,rr);
-		//}
-
-		//printf("\n");
-	//}
-
-	//printf("0 1926\n");
+		
 
 }
